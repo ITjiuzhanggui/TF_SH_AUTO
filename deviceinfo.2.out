@@ -1,0 +1,74 @@
+
+ABL: 1846_GP20
+CPU: APL-D0 [4C @ 1900MHz: premium SKU], ucode rev.36; power-on reset
+CSE: FW 3.1.55.2278, SB: OFF, MB: OFF
+IPC: R.<24 bytes> (10ms)
+PCB: [B00F] GR MRB (BMP fab.E, 4x16Gb), F:1F, BM:2
+MRC: [v0.56.40/89.23] FB OK(0): 8GB
+CSE: send DID UMA 10000000, 34MB
+NPK: enabled
+auto-boot ...
+MMC: 16G, boot 0/0  [5.01 HS400 FW 3.5 4e 5/15]
+copy ELK from SPI in 583 ms
+==> jump to image @12800000 (setup @0) ...
+ abl cmd 00: androidboot.brand=intel
+ abl cmd 00 length: 23
+ abl cmd 01: androidboot.name=broxton_p
+ abl cmd 01 length: 26
+ abl cmd 02: androidboot.model=gr_mrb
+ abl cmd 02 length: 24
+ abl cmd 03: androidboot.device=gr_mrb
+ abl cmd 03 length: 25
+ abl cmd 04: ABL.boot=2
+ abl cmd 04 length: 10
+ abl cmd 05: ABL.csever=3.1.55.2278
+ abl cmd 05 length: 22
+ abl cmd 06: ABL.bpdt1=0x000055aa,0x00001847
+ abl cmd 06 length: 31
+ abl cmd 07: ABL.bpdt2=0x000055aa,0x00001847
+ abl cmd 07 length: 31
+ abl cmd 08: ABL.hwver=53,4,1900,b00f,0,8192
+ abl cmd 08 length: 31
+ abl cmd 09: ABL.mrcthreshold=0,0
+ abl cmd 09 length: 20
+ abl cmd 10: ABL.memser=0x00000001
+ abl cmd 10 length: 21
+ abl cmd 11: ABL.reset=power-on
+ abl cmd 11 length: 18
+ abl cmd 12: ABL.timestamps=64@0xc0000
+ abl cmd 12 length: 25
+ abl cmd 13: ABL.consbuf=0xdc000
+ abl cmd 13 length: 19
+ abl cmd 14: ABL.version=1846_GP20
+ abl cmd 14 length: 21
+ abl cmd 15: ABL.secureboot=0
+ abl cmd 15 length: 16
+ abl cmd 16: ABL.virtual_mode=0
+ abl cmd 16 length: 18
+ abl cmd 17: ABL.boot_target=FASTBOOT
+ abl cmd 17 length: 24
+ abl cmd 18: dev_sec_info.param_addr=0xc5434
+ abl cmd 18 length: 31
+ abl cmd 19: androidboot.bootloader=1846_GP20
+ abl cmd 19 length: 32
+ abl cmd 20: androidboot.serialno=R1J56Lbcfb9367
+ abl cmd 20 length: 35
+ abl cmd 21: androidboot.bootreason=power-on
+ abl cmd 21 length: 31
+ abl cmd 22: fw_boottime=1053
+ abl cmd 22 length: 16
+boot target: 2
+target=2
+Enter fastboot mode ...
+Start Send HECI Message: EndOfPost
+HECI sec_mode 00000000
+GetSeCMode successful
+GEN_END_OF_POST size is 4
+uefi_call_wrapper(SendwACK) =  0
+Group    =000000FF
+Command  =0000000C
+IsRespone=00000001
+Result   =00000000
+RequestedActions   =00000000
+USB for fastboot transport layer selected
+

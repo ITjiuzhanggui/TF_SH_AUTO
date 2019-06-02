@@ -1,0 +1,102 @@
+export XDG_RUNTIME_DIR=/run/ias/
+[38;5;39mroot[0m@[38;5;208mclr-a32c8aca88dc4e4ca6891b7908b9d968 [38;5;39m~ [38;5;39m# [0;0m
+[38;5;39mroot[0m@[38;5;208mclr-a32c8aca88dc4e4ca6891b7908b9d968 [38;5;39m~ [38;5;39m# [0;0mexport XDG_RUNTIME_DIR=/run/ias/
+[38;5;39mroot[0m@[38;5;208mclr-a32c8aca88dc4e4ca6891b7908b9d968 [38;5;39m~ [38;5;39m# [0;0msystemctl status ias
+[0;1;32m●[0m ias.service - ias weston compositor
+   Loaded: loaded (/usr/lib/systemd/system/ias.service; enabled; vendor preset: 
+disabled)
+   Active: [0;1;32mactive (running)[0m since Fri 2018-06-22 11:11:49 UTC; 23s ag
+o
+ Main PID: 274 ((n-launch))
+   Memory: 0B
+   CGroup: /system.slice/ias.service
+           └─274 (n-launch)
+
+Jun 22 11:11:49 clr-a32c8aca88dc4e4ca6891b7908b9d968 systemd[1]: Started ias wes
+ton compositor.
+[38;5;39mroot[0m@[38;5;208mclr-a32c8aca88dc4e4ca6891b7908b9d968 [38;5;39m~ [38;5;39m# [0;0mq
+-bash: q: command not found
+[38;5;39mroot[0m@[38;5;208mclr-a32c8aca88dc4e4ca6891b7908b9d968 [38;5;39m~ [38;5;39m# [0;0msystemctl status ias-earlyapp
+[0;1;32m●[0m ias-earlyapp.service - ias weston compositor
+   Loaded: loaded (/usr/lib/systemd/system/ias-earlyapp.service; enabled; vendor
+ preset: disabled)
+   Active: [0;1;32mactive (running)[0m since Fri 2018-06-22 11:11:49 UTC; 26s ag
+o
+ Main PID: 250 (ias-weston-laun)
+   Memory: 59.8M
+   CGroup: /earlyapp.slice/ias-earlyapp.service
+           ├─250 /usr/bin/ias-weston-launch -- -i 0
+           └─252 /usr/bin/ias-weston -i 0
+
+Jun 22 11:11:49 clr-a32c8aca88dc4e4ca6891b7908b9d968 ias-weston-launch[250]:    
+            arbitrary surface rotation: yes
+Jun 22 11:11:49 clr-a32c8aca88dc4e4ca6891b7908b9d968 ias-weston-launch[250]:    
+            screen capture uses y-flip: yes
+Jun 22 11:11:49 clr-a32c8aca88dc4e4ca6891b7908b9d968 ias-weston-launch[250]:    
+            presentation clock: CLOCK_REALTIME, id 0
+Jun 22 11:11:49 clr-a32c8aca88dc4e4ca6891b7908b9d968 ias-weston-launch[250]:    
+            presentation clock resolution: 0.000000001 s
+Jun 22 11:11:49 clr-a32c8aca88dc4e4ca6891b7908b9d968 ias-weston-launch[250]: [11
+:11:49.742] Loading module '/usr/lib64/ias/ias-shell.so'
+Jun 22 11:11:49 clr-a32c8aca88dc4e4ca6891b7908b9d968 ias-weston-launch[250]: [11
+:11:49.760] Loading module '/usr/lib64/ias/ias_plugin_framework.so'
+[7m--More--[27m[K[38;5;39mroot[0m@[38;5;208mclr-a32c8aca88dc4e4ca6891b7908b9d968 [38;5;39m~ [38;5;39m# [0;0m
+[38;5;39mroot[0m@[38;5;208mclr-a32c8aca88dc4e4ca6891b7908b9d968 [38;5;39m~ [38;5;39m# [0;0mecho "PermitRootLogin yes" > /etc/ ssh/sshd_config
+[38;5;39mroot[0m@[38;5;208mclr-a32c8aca88dc4e4ca6891b7908b9d968 [38;5;39m~ [38;5;39m# [0;0mip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+3: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq master acrn-br0 state UP group default qlen 1000
+    link/ether b8:bf:83:14:99:1e brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::babf:83ff:fe14:991e/64 scope link 
+       valid_lft forever preferred_lft forever
+4: acrn_tap0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq master acrn-br0 state DOWN group default qlen 1000
+    link/ether 0a:36:84:03:a4:aa brd ff:ff:ff:ff:ff:ff
+5: acrn-br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 8e:f4:86:a9:02:9b brd ff:ff:ff:ff:ff:ff
+    inet 10.239.85.177/24 brd 10.239.85.255 scope global dynamic acrn-br0
+       valid_lft 21575sec preferred_lft 21575sec
+    inet6 fe80::8cf4:86ff:fea9:29b/64 scope link 
+       valid_lft forever preferred_lft forever
+[38;5;39mroot[0m@[38;5;208mclr-a32c8aca88dc4e4ca6891b7908b9d968 [38;5;39m~ [38;5;39m# [0;0m/usr/share/acrn/samples/apl-mrb/la unch_uos.sh -V 2
+
+cpu1 online=1
+cpu2 online=1
+cpu3 online=1
+Launch android UOS
+acrn-br0 bridge aleady exists, adding new tap device to it...
+       -G: GVT args: low_gm_size, high_gm_size, fence_sz
+passed gvt-g optargs low_gm 64, high_gm 448, fence 8
+interrupt storm monitor params: 10000, 10, 1, 100
+SW_LOAD: get vsbl path /usr/share/acrn/bios/VSBL.bin
+SW_LOAD: get bootargs maxcpus=3 nohpet tsc=reliable intel_iommu=off    androidboot.serialno=R1J56Lbcfb9367    i915.enable_rc6=1 i915.enable_fbc=1 i915.enable_guc_loading=0 i915.avail_planes_per_pipe=0x070F00    i915.enable_hangcheck=0 use_nuclear_flip=1 i915.enable_guc_submission=0 i915.enable_guc=0
+VHM api version 1.0
+open hugetlbfs file /run/hugepage/acrn/huge_lv1/D279543825D611E8864ECB7A18B34643
+
+open hugetlbfs file /run/hugepage/acrn/huge_lv2/D279543825D611E8864ECB7A18B34643
+
+level 0 free/need pages:0/0 page size:0x200000
+level 1 free/need pages:4/6 page size:0x40000000
+to reserve more free pages:
+to reserve pages (+orig 4): echo 6 > /sys/kernel/mm/hugepages/hugepages-1048576kB/nr_hugepages
+to reserve pages (+orig 0): echo 1024 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
+now enough free pages are reserved!
+
+try to setup hugepage with:
+	level 0 - lowmem 0x0, highmem 0x0
+	level 1 - lowmem 0x80000000, highmem 0x100000000
+total_size 0x240000000
+
+mmap ptr 0x0x7f2aa22d6000 -> baseaddr 0x0x7f2ac0000000
+mmap 0x80000000@0x7f2ac0000000
+touch 2 pages with pagesz 0x40000000
+mmap 0x80000000@0x7f2bc0000000
+touch 2 pages with pagesz 0x40000000
+mmap 0x80000000@0x7f2c40000000
+touch 1024 pages with pagesz 0x200000
+

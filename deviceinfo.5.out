@@ -1,0 +1,74 @@
+
+abl-APL: rel.1836
+CPU: APL-D0 [4C @ 1900MHz: premium SKU], ucode rev.32; power-on reset
+CSE: FW 3.1.55.2271, SB: OFF, MB: OFF
+CSE: boot dev #2: SPI
+IPC config: R.<24 bytes> (16ms)
+PCB #B00F: GR MRB (BMP fab.E, 4x16Gb), F:1F; BM:2
+MRC: [v0.56.40/89.23] FB OK(0): 8GB
+CSE: send DID UMA 10000000, 34MB
+NPK enabled.
+auto-boot ...
+MMC: 16G, boot 0/0  [5.01 HS400 FW 3.5 4e 5/15]: image#2 - ELK: copy ELK from SPI in 1918 ms
+==> jump to image @12800000 (setup @0) ...
+ abl cmd 00: androidboot.brand=intel
+ abl cmd 00 length: 23
+ abl cmd 01: androidboot.name=broxton_p
+ abl cmd 01 length: 26
+ abl cmd 02: androidboot.model=gr_mrb
+ abl cmd 02 length: 24
+ abl cmd 03: androidboot.device=gr_mrb
+ abl cmd 03 length: 25
+ abl cmd 04: ABL.bdev=ELK
+ abl cmd 04 length: 12
+ abl cmd 05: ABL.boot=2
+ abl cmd 05 length: 10
+ abl cmd 06: ABL.csever=3.1.55.2271
+ abl cmd 06 length: 22
+ abl cmd 07: ABL.bpdt1=0x000055aa,0x00001844
+ abl cmd 07 length: 31
+ abl cmd 08: ABL.bpdt2=0x000055aa,0x00001844
+ abl cmd 08 length: 31
+ abl cmd 09: ABL.hwver=53,4,1900,b00f,0,8192
+ abl cmd 09 length: 31
+ abl cmd 10: ABL.mrcthreshold=0,0
+ abl cmd 10 length: 20
+ abl cmd 11: ABL.memser=0x00000001
+ abl cmd 11 length: 21
+ abl cmd 12: ABL.reset=power-on
+ abl cmd 12 length: 18
+ abl cmd 13: ABL.timestamps=64@0xc0000
+ abl cmd 13 length: 25
+ abl cmd 14: ABL.consbuf=0xdc000
+ abl cmd 14 length: 19
+ abl cmd 15: ABL.version=rel.1836
+ abl cmd 15 length: 20
+ abl cmd 16: ABL.secureboot=0
+ abl cmd 16 length: 16
+ abl cmd 17: ABL.virtual_mode=0
+ abl cmd 17 length: 18
+ abl cmd 18: ABL.boot_target=FASTBOOT
+ abl cmd 18 length: 24
+ abl cmd 19: dev_sec_info.param_addr=0xc545c
+ abl cmd 19 length: 31
+Parsed device security information addr is 0xC545C
+ abl cmd 20: androidboot.bootloader=rel.1836
+ abl cmd 20 length: 31
+ abl cmd 21: androidboot.serialno=R1J56L78fb9436
+ abl cmd 21 length: 35
+ abl cmd 22: androidboot.bootreason=power-on
+ abl cmd 22 length: 31
+ abl cmd 23: fw_boottime=2411
+ abl cmd 23 length: 16
+boot target: 2
+target=2
+teedata partition not found
+read data from emulation rpmb parition failed
+Failed to read counter for simulate: Not Found
+rpmb_read_counter unexpected error: 444894500.: Not Found
+rpmb key init failure for osloader
+teedata partition not found
+read data from emulation parition failed
+Failed to read device state: Not Found
+USB for fastboot transport layer selected
+

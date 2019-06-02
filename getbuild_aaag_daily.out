@@ -1,0 +1,16 @@
+Archive:  /home/king/rawbuild/scripts/../images/aaag/daily/2371//gordon_peak_acrn-flashfiles-P0l002371.zip
+  inflating: md5sum.txt              
+  inflating: ifwi_dnx.bin            
+  inflating: partition_desc.bin      
+  inflating: fwversion.txt           
+  inflating: ioc_firmware_gp_mrb_fab_d.ias_ioc  
+  inflating: sos_boot.img            
+  inflating: dnxp_0x1.bin            
+  inflating: flash_AaaG.json         
+  inflating: capsule.fv              
+  inflating: ioc_firmware_gp_mrb_fab_e.ias_ioc  
+  inflating: gordon_peak_acrn_AaaG.img  
+  inflating: sos_rootfs.img          
+  inflating: acrnversion.txt         
+  inflating: ifwi.bin                
+Latest version: 2371/

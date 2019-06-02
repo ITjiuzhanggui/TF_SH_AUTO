@@ -1,0 +1,9 @@
+\r
+root
+Intel@123
+Intel@123
+\r\n
+sos_console\r
+root
+Intel@123
+Intel@123
